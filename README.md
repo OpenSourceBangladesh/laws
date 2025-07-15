@@ -1,32 +1,11 @@
-# Mintlify Starter Kit
+# Laws of Bangladesh
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+This repository contains the complete collection of laws enacted in Bangladesh, organized by volume and year. Each law is documented in MDX format, providing a structured and searchable format for legal texts.
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+# Contribute
 
-### Development
+Please check the [contribution guidelines](contribute.mdx) for details on how to add new laws or update existing ones.
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview the documentation changes locally. To install, use the following command
+# Note
 
-```
-npm i -g mint
-```
-
-Run the following command at the root of your documentation (where docs.json is)
-
-```
-mint dev
-```
-
-### Publishing Changes
-
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
-
-#### Troubleshooting
-
-- If the dev environment isn't running - Run `mint update` to ensure you have the most recent version of the CLI.
-- Page loads as a 404 - Make sure you are running in a folder with `docs.json`
+For any issues or suggestions, feel free to open an issue on the repository or contact the maintainers directly.

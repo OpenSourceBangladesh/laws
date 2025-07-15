@@ -1,0 +1,116 @@
+---
+title: How to contribute
+description: "A detailed guide on how to contribute to the Bangladeshi laws project, including guidelines for adding new laws, updating existing ones, and ensuring accuracy and consistency."
+---
+
+# Prerequisites
+
+Before contributing, please ensure you have the following:
+
+- Basic understanding of Markdown and MDX syntax
+- Familiarity with Git and GitHub
+- Access to a code editor (e.g., VSCode)
+- Basic scraping knowledge (optional, for scraping new laws)
+
+# How to Contribute
+
+## 1. Adding New Laws
+
+To add a new law, follow these steps:
+
+1. **Identify the Law**: Find the law you want to add from the official Bangladesh legal [database](http://bdlaws.minlaw.gov.bd/). Ensure it is not already included in the repository.
+   - Check the existing laws in the relevant volume folder (e.g., `laws/volume-1/`).
+   - If the law is not present, note down its title, number, date, and a brief summary.
+2. **Create a New MDX File**:
+   - Navigate to the appropriate volume folder (e.g., `laws/volume-1/`).
+   - Create a new file named `act-details-{number}.mdx`, where `{number}` is the next available number in the sequence.
+3. **Format the MDX File**:
+
+   - Use the following template:
+
+   ```mdx
+   ---
+   title: "ACT TITLE"
+   description: "Brief description of the act"
+   ---
+
+   ## ACT NO. XX OF YYYY
+
+   ## **Date:** DD Month, YYYY
+
+   ## Summary
+
+   A brief summary of the act.
+
+   ## Sections
+
+   ### 1. Section Title
+
+   Description of the section.
+
+   ### 2. Another Section Title
+
+   ## Description of the section.
+
+   _Source: [Bangladesh Legal Database](http://bdlaws.minlaw.gov.bd/act-details-{number}.html)_
+   ```
+
+4. **Add Content**: Fill in the title, description, date, summary, sections, and source link.
+5. **Commit Changes**:
+   - Add the new file to your local repository.
+   - Commit the changes with a descriptive message (e.g., "Add Act No. XX of YYYY").
+6. **Push Changes**: Push your changes to the remote repository.
+7. **Create a Pull Request**:
+   - Go to the GitHub repository.
+   - Create a new pull request with a clear title and description of your changes.
+
+## 2. Updating Existing Laws
+
+To update an existing law:
+
+1. **Find the Law**: Locate the MDX file for the law you want to update in the appropriate volume folder.
+2. **Edit the MDX File**:
+   - Open the file in your code editor.
+   - Make necessary changes to the content, ensuring you maintain the original structure.
+3. **Commit Changes**:
+   - Save the file.
+   - Commit the changes with a descriptive message (e.g., "Update Act No. XX of YYYY").
+4. **Push Changes**: Push your changes to the remote repository.
+5. **Create a Pull Request**:
+   - Go to the GitHub repository.
+   - Create a new pull request with a clear title and description of your changes.
+
+## 3. Scraping New Laws
+
+If you want to scrape new laws from the official Bangladesh legal database:
+
+1. **Identify the Laws**: Determine which laws you want to scrape.
+2. **Use a Scraping Tool**:
+   - You can use tools like BeautifulSoup (Python) or Puppeteer (JavaScript) to scrape the data.
+   - Ensure you follow the website's terms of service and robots.txt file.
+3. **Format the Scraped Data**:
+   - Convert the scraped data into the MDX format as described in the "Adding New Laws" section.
+4. **Follow the Steps for Adding New Laws**:
+   - Create a new MDX file, fill in the content, commit, push, and create a pull request as described above.
+
+# Guidelines for Contributions
+
+## Formatting
+
+- Use consistent formatting for titles, sections, and descriptions.
+- Ensure proper use of headings (e.g., `##` for main sections, `###` for subsections).
+- Use Markdown syntax for links, bold, and italics as needed.
+
+## Content Accuracy
+
+- Verify the accuracy of the law's content before adding or updating.
+- Ensure that the source link points to the official Bangladesh legal database.
+
+## Review Process
+
+- All contributions will be reviewed by the project maintainers.
+- You may be asked to make changes or provide additional information.
+
+# Acknowledgments
+
+Thank you for your interest in contributing to the Bangladeshi laws project! Your contributions help make legal information more accessible to everyone. If you have any questions or need assistance, feel free to reach out to the project maintainers.

@@ -1,71 +1,51 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: A little Intro
+description: "This is a simple website for Bangladeshi citizens to access the laws of Bangladesh. It contains all Bangladeshi laws organized by volume, covering legislation from 1799 to 2025. Each volume represents a chronological collection of acts, ordinances, and regulations enacted during specific periods."
 ---
 
 <img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
+  src="/logo/flag.svg"
+  alt="Bangladesh Flag"
+  style={{ width: "100%", height: "100%" }}
 />
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+<Card title="মাতৃভূমি অথবা মৃত্যু"> </Card>
 
-## Setting up
+# Why?
 
-The first step to world-class documentation is setting up your editing environments.
+Official websites for Bangladeshi laws are often difficult to navigate, with outdated links and poor search functionality. This site aims to provide a user-friendly interface for accessing the laws of Bangladesh. Also, this site hase AI search functionality, allowing users to find relevant laws quickly and easily.
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+## How?
 
-## Make it yours
+First of all, I scraped the official website of Bangladesh laws, which is [bdlaws.minlaw.gov.bd](http://bdlaws.minlaw.gov.bd/). Then I used a script to convert the scraped data into .mdx that can be used by this site. The site is built using [Mintlify](https://Mintlify.com/) which provide better search functionality and user experience. I tried to deploy it MkDocs, but it doesnt have the AI search functionality. So I used Mintlify to build this site.
 
-Update your docs to your brand and add valuable content for the best user conversion.
+## Features
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+- **Comprehensive Index**: All Bangladeshi laws organized by volume, covering legislation from 1799 to 2025.
+- **AI Search**: Quickly find relevant laws using AI-powered search functionality.
+- **User-Friendly Interface**: Easy navigation and access to legal documents.
+- **Mobile Friendly**: Optimized for viewing on mobile devices.
+- **Open Source**: The project is open for contributions, allowing anyone to help improve the site.
+
+## How to Use
+
+1. **Browse by Volume**: Navigate through the volumes to find specific laws.
+2. **Search Functionality**: Use the AI search bar to find laws by keywords, titles, or topics.
+3. **View Law Details**: Click on a law to view its full text, including sections and amendments.
+
+## About the Project
+
+This project is an independent initiative to make Bangladeshi laws more accessible to the public. It is not affiliated with any government body and aims to provide a reliable resource for legal information. The site is built using modern web technologies to ensure a smooth user experience.
+
+## Legal Disclaimer
+
+## Legal Disclaimer
+
+This site is not affiliated with the Government of Bangladesh or any official legal body. It is an independent project created to provide easier access to Bangladeshi laws. While every effort has been made to ensure the accuracy of the information, users should verify details from official sources before making legal decisions. Do not use this site as a substitute for professional legal advice. The site is provided "as is" without warranties of any kind, either express or implied. The creator of this site is not responsible for any errors or omissions in the content or for any actions taken based on the information provided herein.
+
+## Contributing
+
+If you would like to contribute to this project, please chechk the contribution page here: [Contribute](/contribute/) to check which laws are missing or need to be updated. A detailed guideline is avaiable there. Contributions are welcome!
+
+## Contact
+
+For any questions, suggestions, or feedback, please contact me at [hello@sayed.page](mailto:hello@sayed.page) or directly text me at [here](https://sayed.page/signal)

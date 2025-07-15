@@ -1,102 +1,86 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Laws of Bangladesh",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+  "contextual": {
+    "options": ["copy", "view", "chatgpt"]
+  },
+
+  "favicon": "/logo/flag.svg",
+
+  "icons": {
+    "library": "fontawesome"
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/flag.svg",
+    "dark": "/logo/flag.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "type": "button",
+        "label": "llms.txt",
+        "href": "https://laws.sayed.app/llms.txt"
+      },
+      {
+        "type": "button",
+        "label": "llms-full.txt",
+        "href": "https://laws.sayed.app/llms-full.txt"
+      },
+      {
+        "type": "button",
+        "label": "GitHub",
+        "href": "https://github.com/lawsofbangladesh/laws"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/lawsofbangladesh/laws",
+      "bluesky": "https://bsky.app/profile/sayed.page",
+      "website": "https://sayed.app"
     }
+  },
+  "fonts": {
+    "family": "Tiro Bangla",
+    "weight": 400,
+    "heading": {
+      "family": "Tiro Bangla",
+      "weight": 700
+    }
+  },
+  "appearance": {
+    "default": "dark"
+  },
+
+  "navigation": {
+    "groups": [
+      {
+        "group": "Intro",
+        "icon": "user",
+        "pages": ["index"]
+      },
+      {
+        "group": "Laws",
+        "icon": "book",
+        "pages": [
+          "laws/index",
+          {
+            "group": "Volume 1",
+            "icon": "book",
+            "pages": [
+              "laws/volume-1/index",
+              "laws/volume-1/act-details-1",
+              "laws/volume-1/act-details-2"
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
