@@ -1,12 +1,10 @@
 ---
 title: A little Intro
-description: "This is a simple website for Bangladeshi citizens to access the laws of Bangladesh. It contains all Bangladeshi laws organized by volume, covering legislation from 1799 to 2025. Each volume represents a chronological collection of acts, ordinances, and regulations enacted during specific periods."
+description: "This is a simple website for Bangladeshi citizens to access the laws of Bangladesh. It contains all Bangladeshi laws organized by volume, covering legislation from 1799 to till date. Each volume represents a chronological collection of acts, ordinances, and regulations enacted during specific periods."
 mode: "center"
 ---
 
 # মাতৃভূমি অথবা মৃত্যু
-
-{" "}
 
 <img
   src="/logo/flag.png"
@@ -14,27 +12,44 @@ mode: "center"
   style={{ width: "100%", height: "100%" }}
 />
 
+# What?
+
+Laws of Bangladesh.
+
+<Columns cols={3}>
+  <Card title="Browse by Volume" icon="file" href="/laws/">
+    Browse the laws of Bangladesh by volume.
+  </Card>
+  <Card title="Browse by Year" icon="calendar">
+    Its not implemented yet, but will be added soon.
+  </Card>
+  <Card title="Chronological List" icon="search" href="/list/">
+    A chronological list of all Bangladeshi laws.
+  </Card>
+</Columns>
+
 # Why?
 
 Official websites for Bangladeshi laws are often difficult to navigate, with outdated links and poor search functionality. This site aims to provide a user-friendly interface for accessing the laws of Bangladesh.
 
 ## How?
 
-First of all, I scraped the official website of Bangladesh laws, which is [bdlaws.minlaw.gov.bd](http://bdlaws.minlaw.gov.bd/). Then I used a script to convert the scraped data into .mdx that can be used by this site. The site is built using [Mintlify](https://Mintlify.com/) which provide better search functionality and user experience. I tried to deploy it MkDocs, but it doesnt have the AI search functionality. So I used Mintlify to build this site.
+First of all, I scraped the official website of Bangladesh laws, which is [bdlaws.minlaw.gov.bd](http://bdlaws.minlaw.gov.bd/). Then, processed the data to create a structured index of all Bangladeshi laws.
 
 ## Features
 
-- **Comprehensive Index**: All Bangladeshi laws organized by volume, covering legislation from 1799 to 2025.
-- **AI Search**: Quickly find relevant laws using AI-powered search functionality.
+- **Comprehensive Index**: All Bangladeshi laws organized by volume, covering legislation from 1799 to till date.
+- **AI Search**: Quickly find relevant laws using AI-powered search functionality.[Currently disbaled as it is a paid feature offered by Mintlify]
 - **User-Friendly Interface**: Easy navigation and access to legal documents.
 - **Mobile Friendly**: Optimized for viewing on mobile devices.
 - **Open Source**: The project is open for contributions, allowing anyone to help improve the site.
 
-## How to Use
+## How to Use?
 
 1. **Browse by Volume**: Navigate through the volumes to find specific laws.
-2. **Search Functionality**: Use the AI search bar to find laws by keywords, titles, or topics.
-3. **View Law Details**: Click on a law to view its full text, including sections and amendments.
+2. **Browse by Year**: Use the chronological list to find laws enacted in specific years.[Currently It is not implemented, but will be added soon]
+3. **Search Functionality**: Use the AI search bar to find laws by keywords, titles, or topics.
+4. **View Law Details**: Click on a law to view its full text, including sections and amendments.
 
 ## About the Project
 
@@ -46,7 +61,7 @@ This site is not affiliated with the Government of Bangladesh or any official le
 
 ## Contributing
 
-If you would like to contribute to this project, please chechk the contribution page here: [Contribute](/contribute/) to check which laws are missing or need to be updated. A detailed guideline is avaiable there. Contributions are welcome!
+If you would like to contribute to this project, please check the contribution page here: [Contribute](/contribute/) to check which laws are missing or need to be updated. A detailed guideline is avaiable there. Contributions are welcome!
 
 ## Contact
 

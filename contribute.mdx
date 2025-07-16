@@ -1,7 +1,7 @@
 ---
-title: How to contribute
+title: How to contribute?
 description: "A detailed guide on how to contribute to the Bangladeshi laws project, including guidelines for adding new laws, updating existing ones, and ensuring accuracy and consistency."
-icon: "git-alt"
+icon: "code-pull-request"
 ---
 
 # Prerequisites
@@ -15,57 +15,7 @@ Before contributing, please ensure you have the following:
 
 # How to Contribute
 
-## 1. Adding New Laws
-
-To add a new law, follow these steps:
-
-1. **Identify the Law**: Find the law you want to add from the official Bangladesh legal [database](http://bdlaws.minlaw.gov.bd/). Ensure it is not already included in the repository.
-   - Check the existing laws in the relevant volume folder (e.g., `laws/volume-1/`).
-   - If the law is not present, note down its title, number, date, and a brief summary.
-2. **Create a New MDX File**:
-   - Navigate to the appropriate volume folder (e.g., `laws/volume-1/`).
-   - Create a new file named `act-{number}.mdx`, where `{number}` is the next available number in the sequence.
-3. **Format the MDX File**:
-
-   - Use the following template:
-
-   ```mdx
-   ---
-   title: "ACT TITLE"
-   description: "Brief description of the act"
-   ---
-
-   ## ACT NO. XX OF YYYY
-
-   ## **Date:** DD Month, YYYY
-
-   ## Summary
-
-   A brief summary of the act.
-
-   ## Sections
-
-   ### 1. Section Title
-
-   Description of the section.
-
-   ### 2. Another Section Title
-
-   ## Description of the section.
-
-   _Source: [Bangladesh Legal Database](http://bdlaws.minlaw.gov.bd/act-details-{number}.html)_
-   ```
-
-4. **Add Content**: Fill in the title, description, date, summary, sections, and source link.
-5. **Commit Changes**:
-   - Add the new file to your local repository.
-   - Commit the changes with a descriptive message (e.g., "Add Act No. XX of YYYY").
-6. **Push Changes**: Push your changes to the remote repository.
-7. **Create a Pull Request**:
-   - Go to the GitHub repository.
-   - Create a new pull request with a clear title and description of your changes.
-
-## 2. Updating Existing Laws
+## 1. Updating Existing Laws
 
 To update an existing law:
 
@@ -81,26 +31,40 @@ To update an existing law:
    - Go to the GitHub repository.
    - Create a new pull request with a clear title and description of your changes.
 
-## 3. Scraping New Laws
+## 2. Verification and Status Updates
 
-If you want to scrape new laws from the official Bangladesh legal database:
+You can contribute by verifying the accuracy and completeness of laws on our platform. This involves two types of updates in our [laws index](/list):
 
-1. **Identify the Laws**: Determine which laws you want to scrape.
-2. **Use a Scraping Tool**:
-   - You can use tools like BeautifulSoup (Python) or Puppeteer (JavaScript) to scrape the data.
-   - Ensure you follow the website's terms of service and robots.txt file.
-3. **Format the Scraped Data**:
-   - Convert the scraped data into the MDX format as described in the "Adding New Laws" section.
-4. **Follow the Steps for Adding New Laws**:
-   - Create a new MDX file, fill in the content, commit, push, and create a pull request as described above.
+### Status Column Updates
+
+Review each law's current legal standing and update the **Status** column accordingly:
+
+- **Active**: The law is currently in force and enforceable
+- **Repealed**: The law has been officially revoked or superseded
+- **Amended**: The law has been modified but remains active
+- **Not Verified**: Default status indicating the law requires review
+
+### Checked Column Updates
+
+Verify content accuracy by comparing our website version with the original official sources, then update the **Checked** column:
+
+- **Yes**: Content has been verified against official sources and is accurate
+- **No**: Content requires verification or has known discrepancies
+- **Partial**: Some sections verified, others need review
+
+### Verification Process
+
+1. **Source Comparison**: Compare our content with the official Bangladesh legal database
+2. **Content Review**: Check for formatting, completeness, and accuracy
+3. **Update Status**: Modify both Status and Checked columns as appropriate
+4. **Document Changes**: Include detailed commit messages explaining your updates
 
 # Guidelines for Contributions
 
 ## Formatting
 
-- Use consistent formatting for titles, sections, and descriptions.
-- Ensure proper use of headings (e.g., `##` for main sections, `###` for subsections).
-- Use Markdown syntax for links, bold, and italics as needed.
+- Use Markdown and MDX syntax for formatting.
+  For more customize styling, refer to the [Mintlify Documentation](https://mintlify.com/docs/)
 
 ## Content Accuracy
 
