@@ -1,0 +1,19 @@
+name: Mirror to OpenSourceBangladesh
+
+on:
+  push:
+    branches:
+      - '**'
+  schedule:
+  - cron: '56 11 * * 1'  # Every Monday at 11:56 UTC
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone as bare repo
+        run: |
+          git clone --mirror https://github.com/lawsofbangladesh/laws.git mirror.git
+          cd mirror.git
+          git remote add mirror https://x-access-token:${{ secrets.MIRROR_TOKEN }}@github.com/OpenSourceBangladesh/laws.git
+          git push --mirror mirror
