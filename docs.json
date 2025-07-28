@@ -8,7 +8,49 @@
     "dark": "#15803D"
   },
   "contextual": {
-    "options": ["copy", "view", "chatgpt"]
+    "options": [
+      "copy",
+      "view",
+      "chatgpt",
+      {
+        "title": "Share on Bluesky",
+        "description": "Share this page on Bluesky",
+        "icon": "bluesky",
+        "href": {
+          "base": "https://bsky.app/intent/compose",
+          "query": [
+            {
+              "key": "text",
+              "value": "Check out this page: https://laws.sayed.app$path"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Share on Mastodon",
+        "description": "Share this page on Mastodon",
+        "icon": "mastodon",
+        "href": {
+          "base": "https://mastodon.social/share",
+          "query": [
+            {
+              "key": "text",
+              "value": "Check out this page: https://laws.sayed.app$path"
+            }
+          ]
+        }
+      },
+      "perplexity",
+      "claude"
+    ]
+  },
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "robots": "index, follow",
+      "og:type": "website",
+      "og:site_name": "Laws of Bangladesh"
+    }
   },
 
   "favicon": "/logo/flag.svg",
